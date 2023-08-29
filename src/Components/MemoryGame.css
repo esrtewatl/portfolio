@@ -1,0 +1,114 @@
+.memory-game-container {
+  position: relative;
+}
+
+.covering-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var( --gradient-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content-large {
+  font-size: 3em; /* Adjust the font size as needed */
+}
+.covering-div button {
+  padding: 10px 20px;
+  background-color: #4d79ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.start-button{
+  background-color: green;
+  width: 6em;
+  margin-top: .8em;
+}
+.memory-matching-game {
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 1.3em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: linear-gradient(135deg, #6dd5ed, #fda085);
+  }
+  
+  .game-title {
+    color: var(--primary-color);
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 24px;
+    background-color: var(--secondary-color);
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flipped {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .matched {
+    background-color: var(--accent-color);
+    cursor: default;
+  }
+  
+  .game-complete {
+    margin-top: 20px;
+    color: var(--accent-color);
+  }
+  
+  .reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(179, 179, 195, 0.25) 0px 50px 100px -20px, rgba(41, 22, 183, 0.3) 0px 30px 60px -30px, rgba(207, 208, 210, 0.35) 0px -2px 6px 0px inset;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: .5em;
+
+  }
+  
+  .reset-button:hover {
+    background-color:  green;
+    padding: 1.4em;
+    transform: scale(1.05);
+    color: var(--primary-color);
+    font-weight:bolder;
+    
+  }
+  .game-title{
+    background: var(--gradient-primary);
+  border-radius:  100% 100% 26% 35% / 94% 100% 0% 0% ;
+color: var(--text-light-)
+  }
