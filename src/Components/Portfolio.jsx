@@ -113,6 +113,7 @@ const Portfolio = () => {
  
   <motion.li variants={itemVariants}>Web Accessibility (WCAG)</motion.li>
   <motion.li variants={itemVariants}>Cross-browser Compatibility</motion.li>
+  <motion.li variants={itemVariants}>Sound Design</motion.li>
  
   <motion.li variants={itemVariants}>Performance Optimization</motion.li>
 
