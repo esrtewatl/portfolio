@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./AboutMe.css"; // Import custom CSS styles for the About Me section
-
+import Quotes from "./Quotes";
 
 
 // import TypeAnimate from "./TypeAnimate";
@@ -51,10 +51,10 @@ const AboutMe = () => {
  
         Erica Stewart
       </motion.h1>
-   
+   <Quotes />
 <div className="summary">
 
-      <motion.p variants={itemVariants}>
+      <motion.p className='summaryP' variants={itemVariants}>
      
       Music sparked my web design journey, leading me to 5 years of dedicated experience as a Frontend React Developer. My expertise thrives in crafting engaging web interfaces with animation and sophisticated UX/UI  design, ensuring fantastic user experiences. Proficient in JavaScript, CSS3, and HTML5, I embrace diversity in browser behaviors and prioritize accessibility and design standards. Figma,  Framer, BootStrap and Chakra Ui are my tools of choice, and I thrive on writing clear, maintainable code while contributing to all aspects of the development process.
       </motion.p>

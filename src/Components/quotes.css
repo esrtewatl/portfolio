@@ -1,0 +1,16 @@
+.quoteText{
+color: var(--accent-color);
+font-size: small;
+margin-top: 2em;
+margin-bottom: 2em;
+text-align: center;
+line-height: 1em;
+
+}
+.quoteContainer{
+    width: 15em;
+    height: 7em;
+}
+.quoteBtn{
+    margin-bottom: 1em;
+}

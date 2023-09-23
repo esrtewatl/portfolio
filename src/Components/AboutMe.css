@@ -56,7 +56,7 @@
 }
 
 
-.about-me-section p {
+.summaryP{
   color: var(--text-color);
   font-size: 1.5vw;
   line-height: 1.6;
