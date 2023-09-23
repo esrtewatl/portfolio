@@ -104,14 +104,14 @@ const MemoryGame = () => {
         ))}
       </div>
       {matchedPairs.length === cardValues.length && (
-        <div className="game-complete">
-          <h3>Congratulations! You've matched all pairs.</h3>
-          <FaSmile size={64} />
-        </div>
-      )}
-      <button className="reset-button" onClick={initializeGame}>
-        Reset Game
-      </button>
+  <div className="game-over">
+    <h3>Game Over! You've matched all pairs.</h3>
+    <button className="reset-button" onClick={initializeGame}>
+      Play Again
+    </button>
+  </div>
+)}
+      
     </div>
   );
 };
