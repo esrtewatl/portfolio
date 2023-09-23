@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaClone, FaSadTear } from "react-icons/fa";
 import { motion } from "framer-motion";
-import "../Components/Memorygame.css";
+import "../Components/MemoryGame.css";
 
 const cardValues = [
   "🐶", "🐱", "🐭", "🦊", "🐯", "🦁",
