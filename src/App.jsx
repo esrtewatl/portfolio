@@ -4,15 +4,18 @@ import './global.css';
 
 import Portfolio from './Components/Portfolio';
 import Resume from './Components/Resume'; // Import the Resume component
-
+import GoogleAnalytics from './Components/GoogleAnalytics';
 function App() {
   return (
+    <>
+    <GoogleAnalytics />
     <Router>
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} /> {/* Add this route */}
       </Routes>
     </Router>
+    </>
   );
 }
 
