@@ -88,7 +88,7 @@ const Portfolio = () => {
           
           <li>
           <a
-        href="https://www.dropbox.com/scl/fi/lnhd3o095r9nz3a3ix00b/Resume-1.pdf?rlkey=18oygnxyd6ebwwqv926uqkv3r&dl=0"
+        href="https://www.dropbox.com/scl/fi/zyf274bq1jh8ol7znwyxa/Portfolio-Stewart-Front-End-React-Developer.pdf?rlkey=q97cveze99wdgniaknd3ik5p3&dl=0"
         target="_blank"  // This will open the link in a new tab/window
         rel="noopener noreferrer"
       >

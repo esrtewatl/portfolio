@@ -7,7 +7,7 @@ import Resume from './Components/Resume'; // Import the Resume component
 import GoogleAnalytics from './Components/GoogleAnalytics';
 function App() {
   return (
-    <>
+    <div className='app-container'>
     <GoogleAnalytics />
     <Router>
       <Routes>
@@ -15,7 +15,7 @@ function App() {
         <Route path="/resume" element={<Resume />} /> {/* Add this route */}
       </Routes>
     </Router>
-    </>
+    </div>
   );
 }
 
