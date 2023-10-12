@@ -1,16 +1,34 @@
-.quoteText{
-color: var(--accent-color);
-font-size: small;
-margin-top: 2em;
-margin-bottom: 2em;
-text-align: center;
-line-height: 1em;
+.quoteText {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-top: 2em;
+  margin-bottom: 2em; /* Reduced margin for smaller screens */
+  text-align: center;
+  line-height: 1em;
+  text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.796);
+}
 
+.quoteContainer {
+  width: 20em;
+  height: 11em;
 }
-.quoteContainer{
-    width: 15em;
-    height: 7em;
+
+.quoteBtn {
+  margin-bottom: 3em;
 }
-.quoteBtn{
-    margin-bottom: 1em;
+
+/* Media Query for Small Screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .quoteText {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 1em; /* Further reduce margin for small screens */
+  }
+
+  .quoteContainer {
+    width: 100%; /* Make the container full-width for small screens */
+  }
+
+  .quoteBtn {
+    margin-bottom: 2em; /* Adjust button margin for small screens */
+  }
 }

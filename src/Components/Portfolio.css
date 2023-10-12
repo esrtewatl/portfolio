@@ -1,11 +1,6 @@
 /* Portfolio.css */
 
-/* Reset some default styles */
-body, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
 
-}
 
 /* General styles */
 .portfolio-container {
@@ -16,6 +11,7 @@ body, h1, h2, h3, p {
   align-items: center;
   font-family: 'Special Elite', cursive;
   width: 100vw;
+  margin: 0;
   z-index: -1;
 }
 
@@ -54,14 +50,14 @@ height: 3;
 /* Add this to your Portfolio.css file */
 
 .portfolio-nav .active a {
-  color: var(--accent-color); /* Change to your preferred color */
+  color: var(--text-color); /* Change to your preferred color */
   font-size: larger;
   /* Add any other styles to indicate the active link */
 }
 
 .portfolio-nav a {
   text-decoration: none;
-  color: rgb(239, 38, 38);
+  color:var(--text-color);
   font-weight: bolder;
   text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.796);
   transition: color 0.3s ease;
@@ -75,17 +71,19 @@ height: 3;
 
 /* Sections */
 .portfolio-section {
-  padding: 2em 0;
+  display: block !important;
+  margin-left: 0;
+  margin-right: 0;;
   text-align: center;
   width: 100vw;
   background-color: #f0f0f0;
   color: var(--text-color); /* Text color for ADA compliance */
-}
+} 
 
 /* Home Section */
 #home {
   margin-top: 7em;
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  background: whitesmoke;
   padding: 10em 0;
   text-align: center;
   color: white; /* Text color for ADA compliance */
@@ -100,9 +98,10 @@ height: 3;
 
 /* About Section */
 #about {
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  margin: auto;
+  background-color: var(--tertiary-color);
   padding: 2em;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Skills Section */

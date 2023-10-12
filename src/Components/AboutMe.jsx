@@ -33,7 +33,7 @@ const AboutMe = () => {
 
   return (
     <motion.section
-      id="about"
+
       className="about-me-section"
       variants={sectionVariants}
       initial="hidden"
