@@ -37,7 +37,7 @@ const Sprite = () => {
       <div className="sprite">
         <div className="front-end">
           <div className="skill">
-            <FaLaptopCode color="#000fcf" className="icon" />
+            <FaLaptopCode color="orange" className="icon" />
             Front End
           </div>
           <motion.div className="skills" variants={skillsVariants} initial="hidden" animate="visible">
@@ -57,7 +57,7 @@ const Sprite = () => {
         </div>
         <div className="back-end">
           <div className="skill">
-            <FaServer className="icon skillb" color="#000fcf" />
+            <FaServer className="icon skillb" color="orange" />
             Back-end
           </div>
           <motion.div className="skills" variants={skillsVariants} initial="hidden" animate="visible">
