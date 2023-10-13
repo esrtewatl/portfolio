@@ -11,7 +11,7 @@
 .name {
   font-family: 'Rock Salt', cursive;
   font-size: 5vw;
-  color: var(--text-color);
+  color: var(--accent-color);
   text-align: center;
   text-shadow: 1px 1px 2px rgb(255, 255, 255);
   margin-bottom: 1rem;
@@ -33,7 +33,7 @@
 }
 
 .summary p {
-  color:var(--accent-color);
+  color:var(--text-color);
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -51,7 +51,7 @@
 
 
 .about-me-section h2 {
-  color: var(--accent-color);
+  color: var(--text-color);
   font-size: 4vw;
   margin-bottom: 2vw;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -127,4 +127,50 @@
   opacity: 1;
   transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
+}
+@media (max-width: 768px) {
+  .name {
+    font-size: 6vw; /* Decrease the font size */
+    margin-bottom: 0.5rem; /* Adjust margin */
+  }
+
+  .summary {
+    padding: 2vw; /* Adjust padding */
+    border-radius: 3vw; /* Adjust border radius */
+  }
+
+  .summary p {
+    font-size: 3vw; /* Decrease the font size */
+    line-height: 1.4; /* Adjust line height */
+    margin-bottom: 0.5rem; /* Adjust margin */
+  }
+
+  .about-me-section h2 {
+    font-size: 6vw; /* Decrease the font size */
+    margin-bottom: 1.5vw; /* Adjust margin */
+  }
+
+  .summaryP {
+    font-size: 3.5vw; /* Decrease the font size */
+    line-height: 1.4; /* Adjust line height */
+    margin: 0 auto 1.5vw; /* Adjust margin */
+    padding: 1vw; /* Adjust padding */
+    margin-bottom: 1vw; /* Adjust margin */
+  }
+
+  .about-me-section h3 {
+    font-size: 4.5vw; /* Decrease the font size */
+    margin-top: 1.5vw; /* Adjust margin */
+    margin-bottom: 1.5vw; /* Adjust margin */
+  }
+
+  .experience-list h4 {
+    font-size: 3.5vw; /* Decrease the font size */
+    margin-bottom: 1vw; /* Adjust margin */
+  }
+
+  .experience-list p {
+    font-size: 3vw; /* Decrease the font size */
+    line-height: 1.2; /* Adjust line height */
+  }
 }

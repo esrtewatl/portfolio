@@ -5,12 +5,12 @@
 /* General styles */
 .portfolio-container {
   display: flex;
-  width: 100vw;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Special Elite', cursive;
-  width: 100vw;
+
   margin: 0;
   z-index: -1;
 }
@@ -20,12 +20,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 7em;
   background-image: url(../assets/blueblck.png);
   background-size: cover;
 background-position-x: -300px;
-height: 3;
-  padding: 5px;
+height: 100%;
+
   box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
   text-shadow: 12px 12px 14px rgba(0, 0, 0, 0.2);
   z-index: 2;
@@ -36,8 +36,11 @@ height: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
+  margin-top: 3em;
+  gap:5em;
   text-shadow: 12px 12px 14px rgb(173, 136, 26);
 }
 
@@ -277,9 +280,35 @@ justify-content: center;
   /* Adjust styles for smaller screens here */
 
   /* Portfolio Navigation */
-  .portfolio-nav li {
-    font-size: medium;
+  .portfolio-nav {
+  width: 100% !important;
+    height: 4em;
+   position:sticky;
+   margin-top: .4em;
+
+  gap:  1.8em;
   }
+
+  .portfolio-nav ul {
+    display: block;
+    border-left: solid 1em;
+    border-color: orangered;
+ margin: 0;
+ padding-left: 2em;
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .portfolio-nav li {
+    margin: 0;
+    font-size: medium;
+
+  }
+  .portfolio-section{
+    width: 100%;
+  }
+
+
+
   .thumbanil-div p{
     display: flex;
     flex-direction: column;
@@ -315,9 +344,28 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 0.5em;
-    line-height: .5em;
+    margin-top: 1em;
   }
+  
+  .project-carousel {
+    border: 1px solid #0f0a0a;
+    padding: 5px;
+    margin: auto;
+    border-radius: 2em;
+    box-shadow: rgba(243, 241, 241, 0.3) 4px 7px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
+    width: 75%;
+  margin-top: 5em ;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  
+  }
+  .thumb-title{
+    font-size: x-large;
+  }
+
 }
 
 /* Media Query for Larger Screens */

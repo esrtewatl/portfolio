@@ -1,28 +1,32 @@
-/* CallToAction.css */
-
+/* Action.css */
 .cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 4em;
-  width: 100%;
+
+  margin-top: 1.5em;
 }
 
 .cta-icons {
   display: flex;
   justify-content: center;
-  gap: 1em;
-  margin-bottom: 1em;
-  max-width: 100%;
+  align-items: center;
 }
 
-.cta-icons a {
-  color: var(--accent-color); /* Change to your preferred color */
-  transition: color 0.3s ease;
-}
+/* For small screens, adjust icon size and margins */
+@media (max-width: 768px) {
+  .cta-icons a {
+    margin: 0.5rem; /* Adjust margin between icons */
+  }
 
-.cta-icons a:hover {
-  color: var(--accent-color-hover); /* Change to a slightly different shade for hover effect */
-}
-
-.cta-text {
-  color: var(--text-color); /* Text color for ADA compliance */
+  .cta-icons a svg {
+    width: 24px; /* Decrease icon size */
+    height: 24px;
+  }
+  
+  .cta-text {
+    font-size: 1.5rem; /* Decrease text size */
+    margin: 1rem 0; /* Adjust margin */
+  }
 }
