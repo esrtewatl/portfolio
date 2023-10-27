@@ -21,13 +21,13 @@
   top: 0;
   left: 0;
   width: 7em;
-  background-image: url(../assets/blueblck.png);
+  /* background-image: url(../assets/blueblck.png);
   background-size: cover;
-background-position-x: -300px;
+background-position-x: -300px; */
 height: 100%;
 
-  box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
-  text-shadow: 12px 12px 14px rgba(0, 0, 0, 0.2);
+  /* box-shadow: rgba(241, 236, 236, 0.3) 12px 9px 8px, rgba(246, 242, 242, 0.974) 3px 5px 2px;
+  text-shadow: 12px 12px 14px rgba(255, 249, 249, 0.997); */
   z-index: 2;
 }
 
@@ -40,15 +40,15 @@ height: 100%;
   padding: 0;
   margin: 0;
   margin-top: 3em;
-  gap:5em;
-  text-shadow: 12px 12px 14px rgb(173, 136, 26);
+  gap: 2em;
+  text-shadow: 2px 2px 4px orangered;
 }
 
 .portfolio-nav li {
   margin: 0 20px;
   font-size: larger;
   font-weight: bolder;
-  text-shadow: 12px 12px 14px rgba(187, 21, 21, 0.678);
+  
 }
 /* Add this to your Portfolio.css file */
 
@@ -62,14 +62,14 @@ height: 100%;
   text-decoration: none;
   color:var(--text-color);
   font-weight: bolder;
-  text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.796);
+  
   transition: color 0.3s ease;
 }
 
 .portfolio-nav a:hover {
   color: var(--accent-color);
   font-size: larger;
-  transition: ease-in-out 0.3s, color 0.3s ease;
+  transition: ease-in-out 0.3s, color 1.3s ease;
 }
 
 /* Sections */
@@ -109,7 +109,7 @@ height: 100%;
 
 /* Skills Section */
 #skills {
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  /* background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%); */
   padding: 4em;
   width: 100%;
 }
@@ -159,7 +159,7 @@ height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  background: var(--tertiary-color);
 }
 
 .project {

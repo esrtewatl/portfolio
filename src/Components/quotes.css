@@ -6,8 +6,7 @@
   margin-bottom: 2em;
   text-align: center;
   line-height: 1em;
-  text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.796);
-}
+font-weight: bolder;
 
 .quoteContainer {
   width: 20em;
@@ -15,7 +14,8 @@
 }
 
 .quoteBtn {
-  margin-bottom: 3em;
+  margin-bottom: em;
+
 }
 
 /* Media Query for Small Screens (e.g., mobile) */

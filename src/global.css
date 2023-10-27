@@ -2,41 +2,35 @@
 
 :root {
   /* Primary Colors */
-  --primary-color: #1a1a1a;      /* Dark Background */
-  --secondary-color: #303030;    /* Dark Gray */
-  --tertiary-color: #4d79ff;     /* Royal Blue */
+  --primary-color: #f9f9f9;      /* Very Light Gray */
+  --secondary-color: #eaeaea;    /* Light Gray */
+  --tertiary-color: #cccccc;     /* Gray */
   --accent-color: #ff5733;       /* Orange */
 
   /* Background Colors */
-  --background-color: #1a1a1a;   /* Dark Background */
+  --background-color: #c4c1c1;   /* Very Light Gray */
   
   /* Text Colors */
-  --text-color: #fff;            /* White Text */
-  --text-light: #d7d1d1;         /* Light Gray Text */
-  --text-accent: #4d79ff;        /* Royal Blue Text */
+  --text-color: #f7f3f3;            /* Gray Text */
+  --text-light: #999;            /* Light Gray Text */
+  --text-accent: #ff5733;        /* Orange Text */
   
   /* Button Colors */
-  /* --button-bg: var(--primary-color); */
   --button-text: #fff;           /* White Text */
   
   /* Gradients */
-  --gradient-primary: linear-gradient(to bottom, #1a1a1a, #303030);
+  --gradient-primary: linear-gradient(to bottom, #8f8d8d, #4b4848);
   --gradient-accent: linear-gradient(to bottom, #ff5733, #ff7847);
-  --gradient-secondary: linear-gradient(to bottom, #303030, #1a1a1a);
-  --gradient-tertiary: linear-gradient(to bottom, #4d79ff, #3355cc);
+  --gradient-secondary: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  --gradient-tertiary: linear-gradient(to bottom, #cccccc, #999999);
 }
 
 /* Example usage */
 body {
   width: 100vw;
-  background: linear-gradient(140deg, rgba(34,34,94,1) 6%, rgba(46,46,47,1) 52%, rgba(34,34,94,1) 96%);
+  background: linear-gradient(140deg, rgba(249,249,249,1) 6%, rgba(234,234,234,1) 52%, rgba(249,249,249,1) 96%);
   color: var(--text-color);
 }
-
-/* .button {
-  background: var(--button-bg);
-  color: var(--button-text);
-} */
 
 .gradient-primary {
   background: var(--gradient-primary);
