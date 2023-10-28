@@ -12,7 +12,7 @@ import InteractiveHeading from "./InteractiveHeading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Action from './Action.jsx';
+
 import { Helmet } from "react-helmet";
 import fitapp from '../assets/fitapp.png';
 import mfz from "../assets/mfz.png"
@@ -100,7 +100,7 @@ const Portfolio = () => {
         </ul>
       </motion.nav>
       <motion.section id="about" className="portfolio-section">
-        <Action/>
+      
         <AboutMe />
       </motion.section>
       <motion.section id="skills" className="portfolio-section">
@@ -109,17 +109,17 @@ const Portfolio = () => {
         <motion.h3 className='ss'variants={itemVariants}>Specialized Skills</motion.h3>
         <ul className="skills-list">
           
-  <motion.li variants={itemVariants}>UI/UX Design Principles</motion.li>
+  <li>UI/UX Design Principles</li>
  
-  <motion.li variants={itemVariants}>Web Accessibility (WCAG)</motion.li>
-  <motion.li variants={itemVariants}>Cross-browser Compatibility</motion.li>
-  <motion.li variants={itemVariants}>Sound Design</motion.li>
+  <li>Web Accessibility (WCAG)</li>
+  <li>Cross-browser Compatibility</li>
+  <li>Sound Design</li>
  
-  <motion.li variants={itemVariants}>Performance Optimization</motion.li>
+  <li>Performance Optimization</li>
 
-  <motion.li variants={itemVariants}>Debugging</motion.li>
+  <li>Debugging</li>
 
-  <motion.li variants={itemVariants}>Animation Libraries (Framer Motion, GSAP)</motion.li>
+  <li>Animation Libraries (Framer Motion, GSAP)</li>
 
         </ul>
       </motion.section>

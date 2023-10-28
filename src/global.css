@@ -20,9 +20,9 @@
   
   /* Gradients */
   --gradient-primary: linear-gradient(to bottom, #8f8d8d, #4b4848);
-  --gradient-accent: linear-gradient(to bottom, #ff5733, #ff7847);
-  --gradient-secondary: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --gradient-tertiary: linear-gradient(to bottom, #cccccc, #999999);
+  --gradient-accent: linear-gradient(to bottom, #ff5733, #ae948b);
+  --gradient-secondary: linear-gradient(to bottom, #0a0a0a, #f9f9f9);
+  --gradient-tertiary: linear-gradient(to bottom, #11010159, #0901012b);
 }
 
 /* Example usage */

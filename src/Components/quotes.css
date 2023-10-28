@@ -7,15 +7,15 @@
   text-align: center;
   line-height: 1em;
 font-weight: bolder;
-
+}
 .quoteContainer {
   width: 20em;
   height: 11em;
 }
 
 .quoteBtn {
-  margin-bottom: em;
-
+  margin-bottom: 3em;
+  height: 5em;
 }
 
 /* Media Query for Small Screens (e.g., mobile) */

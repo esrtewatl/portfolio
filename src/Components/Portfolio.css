@@ -76,28 +76,22 @@ height: 100%;
 .portfolio-section {
   display: block !important;
   margin-left: 0;
-  margin-right: 0;;
+  margin-right: 0;
   text-align: center;
   width: 100vw;
-  background-color: #f0f0f0;
+  background: var( --gradient-secondary);
   color: var(--text-color); /* Text color for ADA compliance */
 } 
 
 /* Home Section */
 #home {
-  margin-top: 7em;
-  background: whitesmoke;
+
   padding: 10em 0;
   text-align: center;
   color: white; /* Text color for ADA compliance */
 }
 
-#home h1 {
-  margin-top: 1em;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 12px 12px 24px rgb(255, 255, 255);
-}
+
 
 /* About Section */
 #about {
@@ -109,9 +103,10 @@ height: 100%;
 
 /* Skills Section */
 #skills {
-  /* background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%); */
+  background-color: var(--gradient-secondary);
   padding: 4em;
   width: 100%;
+
 }
 .ss{
   margin-top: 2em;
@@ -130,7 +125,7 @@ height: 100%;
 }
 
 .skills-list li {
-  background: var(--tertiary-color);
+  background: var(--gradient-accent);
   color: #fff;
   font-size: 1rem;
   padding: 8px 20px;
@@ -149,17 +144,17 @@ height: 100%;
 
 /* Projects Section */
 #projects {
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 2em 0;
   width: 100%;
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  background: var(--gradient-primary);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--tertiary-color);
+  background: var( --gradient-tertiary);
 }
 
 .project {
@@ -173,10 +168,12 @@ height: 100%;
   width: 75%;
   color: var(--text-color); /* Text color for ADA compliance */
 }
-
+.project{
+  margin-top: 2em;
+}
 .memory-game-container{
   margin: auto;
-  background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
+  background: linear-gradient(140deg, rgb(109, 109, 158) 6%, rgb(138, 138, 150) 52%, rgb(12, 12, 16) 96%);
 }
 
 /* Portfolio.css */
@@ -188,10 +185,10 @@ height: 100%;
 }
 
 .tech-stack-text.in-view {
-  opacity: 1;
-  transform: translateY(0);
+
 }
 .mfz{
+ 
   margin: auto;
   width: 50%;
   height: 50%;
@@ -204,22 +201,16 @@ height: 100%;
   border-radius: .3em;
 cursor:cell;
 width:auto;
-background-color: red !important;
+
 box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 8px, rgba(0, 0, 0, 0.22) 0px 5px 2px;
 
 }
-@keyframes constantMotion {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
+
 
 /* Apply the animation to the tech items */
 .tech-item {
-  animation: constantMotion 2s infinite;
+  background: var(--gradient-accent);
+ background-color: var( --gradient-accent);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 8px, rgba(0, 0, 0, 0.22) 0px 5px 2px;
 }
 .tech-list{
@@ -231,9 +222,12 @@ margin-top: 1em;
 margin-bottom: .5em;
 
 }
+.memory-game-container{
+  margin-top: 2em;
+}
 .project-carousel {
   border: 1px solid #0f0a0a;
-  padding: 10px;
+
   margin: auto;
   border-radius: 2em;
   box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
@@ -285,7 +279,7 @@ justify-content: center;
     height: 4em;
    position:sticky;
    margin-top: .4em;
-
+background: var(--gradient-accent);
   gap:  1.8em;
   }
 

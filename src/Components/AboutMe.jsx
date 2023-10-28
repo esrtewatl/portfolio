@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./AboutMe.css";
-
+import Action from './Action.jsx';
 const AboutMe = () => {
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -64,6 +64,7 @@ const AboutMe = () => {
       initial="hidden"
       animate="visible"
     >
+        <Action/>
       <h2>Software Developer</h2>
       <motion.h1 className="name" variants={nameVariants} initial="hidden" animate="visible">
         Erica Stewart

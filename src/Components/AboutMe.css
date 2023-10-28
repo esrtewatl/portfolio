@@ -7,6 +7,9 @@
   align-items: center;
 
 }
+.about-me-section h2{
+  margin-top: 1em;
+}
 
 .name {
   font-family: 'Rock Salt', cursive;
