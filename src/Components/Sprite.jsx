@@ -33,13 +33,9 @@ const Sprite = () => {
   };
 
   return (
-    <div className="sprite-container">
+
       <div className="sprite">
-        <div className="front-end">
-          <div className="skill">
-            <FaLaptopCode color="orange" className="icon" />
-            Front End
-          </div>
+ 
           <motion.div className="skills" variants={skillsVariants} initial="hidden" animate="visible">
             <motion.div variants={skillIconVariants} className="skill-icon">
               <FaHtml5 color="#E44D26" size={64} />HTML
@@ -53,14 +49,11 @@ const Sprite = () => {
             <motion.div variants={skillIconVariants} className="skill-icon">
               <FaReact color="#61DAFB" size={64} />React
             </motion.div>
-          </motion.div>
-        </div>
-        <div className="back-end">
-          <div className="skill">
-            <FaServer className="icon skillb" color="orange" />
-            Back-end
-          </div>
-          <motion.div className="skills" variants={skillsVariants} initial="hidden" animate="visible">
+      
+      
+    
+   
+         
             <motion.div variants={skillIconVariants} className="skill-icon">
               <FaNodeJs color="#68A063" size={64} />Nodejs
             </motion.div>
@@ -68,9 +61,9 @@ const Sprite = () => {
               <FaCodeBranch color="#6e5494" size={64} />API
             </motion.div>
           </motion.div>
-        </div>
+
       </div>
-    </div>
+
   );
 };
 

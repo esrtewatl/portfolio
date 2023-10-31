@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./AboutMe.css";
-import Action from './Action.jsx';
+import Action from './Action.jsx';  
+import Sprite from "./Sprite";
+
 const AboutMe = () => {
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -65,10 +67,15 @@ const AboutMe = () => {
       animate="visible"
     >
         <Action/>
-      <h2>Software Developer</h2>
+       
+        <h2 className="title">Front End Developer</h2>
+        <Sprite className='sprite'  />
+        <div className="tag">
+   
       <motion.h1 className="name" variants={nameVariants} initial="hidden" animate="visible">
         Erica Stewart
       </motion.h1>
+      </div>
 
       <div className="summary" ref={summaryRef}>
         {isSummaryInView && (
