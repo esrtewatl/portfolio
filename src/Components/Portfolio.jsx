@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet";
 import fitapp from '../assets/fitapp.png';
 import mfz from "../assets/mfz.png"
 import pixel from '../assets/Pixel.png';
-import Uc from "./UC.JSX";
+import UC from "./UC.JSX";
 const Portfolio = () => {
   const sectionsRef = {
     about: useRef(null),
@@ -70,7 +70,7 @@ const Portfolio = () => {
       <Helmet>
         <meta name="description" content="Passionate Front-End Developer with expertise in crafting engaging and responsive web experiences. Proficient in HTML, CSS, JavaScript, and React.js. Skilled in UI/UX design principles, web accessibility, and performance optimization. Explore my portfolio to see projects showcasing creativity, interactivity, and clean code." />
       </Helmet>
-      <Uc />
+      <UC />
       <motion.nav
         className="portfolio-nav"
         variants={navVariants}
