@@ -1,4 +1,8 @@
 /* Action.css */
+.action-icon {
+  font-size: 32px; /* Default icon size */
+}
+
 .cta-container {
   position: relative;
   display: flex;
@@ -6,39 +10,45 @@
   align-items: center;
   text-align: center;
   margin-bottom: 2.5em;
+  padding: 0 1em; /* Add padding for better spacing on small screens */
 }
-
 
 .cta-text {
   font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 16px; /* Adjust the font size as needed */
-  font-weight: 400; /* Adjust the font weight as needed */
-  color: #333; /* Customize the text color */
+  font-size: 1rem; /* Adjust the font size for better readability on small screens */
+  font-weight: 400;
+  color: #333;
   text-align: center;
-  margin: 1rem 0; /* Adjust margin as needed */
+  margin: 1rem 0;
 }
 
 .cta-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Add this line */
-  z-index: 1; /* Add this line to make sure the icons remain above the mask */
+  position: relative;
+  z-index: 1;
 }
 
-/* For small screens, adjust icon size and margins */
+/* Adjust the icon size and margins for small screens */
 @media (max-width: 768px) {
+  .cta-container {
+    margin-bottom: 1.5em; /* Adjust margin for better spacing on small screens */
+  }
+  .action-icon {
+    font-size: 24px; /* Icon size for screens with a width of 768px or less */
+  }
+  .cta-text {
+    font-size: 0.9rem; /* Adjust the font size for small screens */
+    margin: 0.5rem 0; /* Adjust margin for better spacing on small screens */
+  }
+
   .cta-icons a {
-    margin: 0.5rem;
+    margin: 0.5rem; /* Adjust margin for better spacing on small screens */
   }
 
   .cta-icons a svg {
     width: 24px;
     height: 24px;
-  }
-
-  .cta-text {
-    font-size: 1.5rem;
-    margin: 1rem 0;
   }
 }

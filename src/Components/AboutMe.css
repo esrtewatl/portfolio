@@ -162,7 +162,10 @@
     font-size: 6vw; /* Decrease the font size */
     margin-bottom: 0.5rem; /* Adjust margin */
   }
-
+.side2side{
+  flex-direction: column;
+  width: 100%;
+}
   .summary {
     padding: 2vw; /* Adjust padding */
     border-radius: 3vw; /* Adjust border radius */
@@ -172,6 +175,9 @@
     font-size: 3vw; /* Decrease the font size */
     line-height: 1.4; /* Adjust line height */
     margin-bottom: 0.5rem; /* Adjust margin */
+  }
+  .about-me-section{
+    width: 100%;
   }
 
   .about-me-section h2 {

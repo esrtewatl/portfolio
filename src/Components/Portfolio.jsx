@@ -70,7 +70,7 @@ const Portfolio = () => {
       <Helmet>
         <meta name="description" content="Passionate Front-End Developer with expertise in crafting engaging and responsive web experiences. Proficient in HTML, CSS, JavaScript, and React.js. Skilled in UI/UX design principles, web accessibility, and performance optimization. Explore my portfolio to see projects showcasing creativity, interactivity, and clean code." />
       </Helmet>
-    
+    <div>
       <motion.nav
         className="portfolio-nav"
         variants={navVariants}
@@ -102,6 +102,7 @@ const Portfolio = () => {
 
         </ul>
       </motion.nav>
+      </div>
       <motion.section id="about" className="portfolio-section">
       
         <AboutMe />
