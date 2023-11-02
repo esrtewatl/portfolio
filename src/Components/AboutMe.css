@@ -158,54 +158,49 @@
   transition: opacity 300ms, transform 300ms;
 }
 @media (max-width: 768px) {
-  .name {
-    font-size: 6vw; /* Decrease the font size */
-    margin-bottom: 0.5rem; /* Adjust margin */
-  }
-.side2side{
-  flex-direction: column;
-  width: 100%;
-}
-  .summary {
-    padding: 2vw; /* Adjust padding */
-    border-radius: 3vw; /* Adjust border radius */
-  }
-
-  .summary p {
-    font-size: 3vw; /* Decrease the font size */
-    line-height: 1.4; /* Adjust line height */
-    margin-bottom: 0.5rem; /* Adjust margin */
-  }
-  .about-me-section{
+  .side2side {
+    flex-direction: column;
     width: 100%;
+  justify-content: center;
   }
-
+  .devstack {
+    align-items: center;
+  }
+  .name {
+    font-size: 6vw;
+    margin-bottom: 0.5rem;
+  }
   .about-me-section h2 {
-    font-size: 6vw; /* Decrease the font size */
-    margin-bottom: 1.5vw; /* Adjust margin */
+    font-size: 6vw;
+    margin-bottom: 1.5vw;
   }
-
+  .summary {
+    padding: 2vw;
+    border-radius: 3vw;
+  }
+  .summary p {
+    font-size: 3vw;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
   .summaryP {
-    font-size: 3.5vw; /* Decrease the font size */
-    line-height: 1.4; /* Adjust line height */
-    margin: 0 auto 1.5vw; /* Adjust margin */
-    padding: 1vw; /* Adjust padding */
-    margin-bottom: 1vw; /* Adjust margin */
+    font-size: 3.5vw;
+    line-height: 1.4;
+    margin: 0 auto 1.5vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
   }
-
   .about-me-section h3 {
-    font-size: 4.5vw; /* Decrease the font size */
-    margin-top: 1.5vw; /* Adjust margin */
-    margin-bottom: 1.5vw; /* Adjust margin */
+    font-size: 4.5vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
   }
-
   .experience-list h4 {
-    font-size: 3.5vw; /* Decrease the font size */
-    margin-bottom: 1vw; /* Adjust margin */
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
   }
-
   .experience-list p {
-    font-size: 3vw; /* Decrease the font size */
-    line-height: 1.2; /* Adjust line height */
+    font-size: 3vw;
+    line-height: 1.2;
   }
 }
