@@ -1,18 +1,22 @@
 /* Portfolio.css */
 
-
-
 /* General styles */
 .portfolio-container {
   display: flex;
-
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Special Elite', cursive;
-
   margin: 0;
   z-index: -1;
+}
+
+.sect-links {
+  width: 4.3em;
+  background: var(--gradient-tertiary);
+  height: 2em;
+  border-radius: .2em;
 }
 
 /* Portfolio Navigation */
@@ -21,13 +25,7 @@
   top: 0;
   left: 0;
   width: 7em;
-  /* background-image: url(../assets/blueblck.png);
-  background-size: cover;
-background-position-x: -300px; */
-height: 100%;
-
-  /* box-shadow: rgba(241, 236, 236, 0.3) 12px 9px 8px, rgba(246, 242, 242, 0.974) 3px 5px 2px;
-  text-shadow: 12px 12px 14px rgba(255, 249, 249, 0.997); */
+  height: 100%;
   z-index: 2;
 }
 
@@ -48,28 +46,24 @@ height: 100%;
   margin: 0 20px;
   font-size: larger;
   font-weight: bolder;
-  
 }
-/* Add this to your Portfolio.css file */
 
 .portfolio-nav .active a {
-  color: var(--text-color); /* Change to your preferred color */
-  font-size: larger;
-  /* Add any other styles to indicate the active link */
+  color: var(--text-color);
+  font-size: x-large;
 }
 
 .portfolio-nav a {
   text-decoration: none;
-  color:var(--text-color);
-  font-weight: bolder;
-  
+  color: black;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .portfolio-nav a:hover {
-  color: var(--accent-color);
+  color: black;
   font-size: larger;
-  transition: ease-in-out 0.3s, color 1.3s ease;
+  transition: ease-in-out 0.3s, color 1s ease;
 }
 
 /* Sections */
@@ -79,40 +73,35 @@ height: 100%;
   margin-right: 0;
   text-align: center;
   width: 100vw;
-  background: var( --gradient-secondary);
-  color: var(--text-color); /* Text color for ADA compliance */
-} 
+  color: var(--text-color);
+}
+.portfolio-section h2{
+  color: black;
+  font-weight: 700;
+}
 
 /* Home Section */
 #home {
-
   padding: 10em 0;
   text-align: center;
-  color: white; /* Text color for ADA compliance */
+  color: white;
 }
-
-
 
 /* About Section */
 #about {
   margin: auto;
-  background-color: var(--tertiary-color);
   padding: 2em;
   width: 100vw;
 }
 
 /* Skills Section */
-#skills {
-  background-color: var(--gradient-secondary);
-  padding: 4em;
-  width: 100%;
 
-}
-.ss{
+
+.ss {
   margin-top: 2em;
   margin-bottom: .6em;
 }
-  
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -125,40 +114,36 @@ height: 100%;
 }
 
 .skills-list li {
-  background: var(--gradient-accent);
+  background: var(--gradient-secondary);
   color: #fff;
   font-size: 1rem;
   padding: 8px 20px;
   margin: 5px;
   border-radius: 20px;
- 
 }
 
 .skills-list li:hover {
-  background: var(--gradient-accent);
+  background: linear-gradient(180deg, rgba(255,111,12,1) 6%, rgba(216,158,29,1) 52%, rgba(224,68,10,1) 96%);
   cursor: pointer;
   font-weight: 800;
-
 }
-
 
 /* Projects Section */
 #projects {
   margin-top: 2em;
   padding: 2em 0;
   width: 100%;
-  background: var(--gradient-primary);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var( --gradient-tertiary);
+  background: var(--gradient-tertiary);
 }
 
 .project {
-  background: var(--gradient-tertiary);
+  background: linear-gradient(180deg, rgba(255,111,12,1) 6%, rgba(216,158,29,1) 52%, rgba(224,68,10,1) 96%);
   border: 1px solid #0f0a0a;
   padding: 20px;
   margin: auto;
@@ -166,17 +151,17 @@ height: 100%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
   width: 75%;
-  color: var(--text-color); /* Text color for ADA compliance */
-}
-.project{
-  margin-top: 2em;
-}
-.memory-game-container{
-  margin: auto;
-  background: linear-gradient(140deg, rgb(109, 109, 158) 6%, rgb(138, 138, 150) 52%, rgb(12, 12, 16) 96%);
+  color: var(--text-color);
 }
 
-/* Portfolio.css */
+.project {
+  margin-top: 2em;
+}
+
+.memory-game-container {
+  margin: auto;
+}
+
 .tech-stack-text {
   opacity: 0;
   transform: translateY(20px);
@@ -184,11 +169,7 @@ height: 100%;
   font-size: 1.7em;
 }
 
-.tech-stack-text.in-view {
-
-}
-.mfz{
- 
+.mfz {
   margin: auto;
   width: 50%;
   height: 50%;
@@ -196,124 +177,110 @@ height: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.tech-item:hover{
-  margin: auto;
-  border-radius: .3em;
-cursor:cell;
-width:auto;
 
-box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 8px, rgba(0, 0, 0, 0.22) 0px 5px 2px;
-
-}
-
-
-/* Apply the animation to the tech items */
 .tech-item {
   background: var(--gradient-accent);
- background-color: var( --gradient-accent);
+  background-color: var(--gradient-accent);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 8px, rgba(0, 0, 0, 0.22) 0px 5px 2px;
 }
-.tech-list{
+
+.tech-list {
   display: flex;
   justify-content: center;
   gap: 2em;
   width: 100%;
-margin-top: 1em;
-margin-bottom: .5em;
-
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
-.memory-game-container{
+
+.memory-game-container {
   margin-top: 2em;
 }
+
 .project-carousel {
   border: 1px solid #0f0a0a;
-
   margin: auto;
   border-radius: 2em;
   box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
   width: 75%;
-margin-top: 5em ;
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 35em;
-
 }
-.thumbanil-div{
+
+.thumbanil-div {
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   height: 100%;
   margin-top: .7em;
   gap: 2.5em;
-
   line-height: 2.7em;
- 
 }
-.thumb-title{
-  color: var(--accent-color);
-  font-size: large;
+
+.thumb-title {
+  color:black;
+  font-size: larger;
   font-weight: 900;
   text-shadow: #f0f0f0 1px 1px;
   margin-top: .5em;
   margin-bottom: 1.5em;
 }
-.thumbanil-div a{
+
+.thumbanil-div a {
   color: white;
   font-family: 'Rock Salt', cursive;
   text-decoration: none;
   font-weight: bold;
 }
+
 /* Contact Section */
 #contact {
   padding: 3em 0;
   background: linear-gradient(140deg, rgba(34, 34, 94, 1) 6%, rgba(46, 46, 47, 1) 52%, rgba(34, 34, 94, 1) 96%);
 }
+
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-  /* Adjust styles for smaller screens here */
-
-  /* Portfolio Navigation */
   .portfolio-nav {
-  width: 100% !important;
+    width: 100% !important;
     height: 4em;
-   position:sticky;
-   margin-top: .4em;
-background: var(--gradient-accent);
-  gap:  1.8em;
+    position: sticky;
+    margin-top: .4em;
+    background: var(--gradient-accent);
+    gap: 1.8em;
   }
 
   .portfolio-nav ul {
     display: block;
     border-left: solid 1em;
     border-color: orangered;
- margin: 0;
- padding-left: 2em;
-    margin-top: 0; /* Remove top margin */
+    margin: 0;
+    padding-left: 2em;
+    margin-top: 0;
   }
 
   .portfolio-nav li {
     margin: 0;
     font-size: medium;
-
   }
-  .portfolio-section{
+
+  .portfolio-section {
     width: 100%;
   }
 
-
-
-  .thumbanil-div p{
+  .thumbanil-div p {
     display: flex;
     flex-direction: column;
-  justify-content: center;
+    justify-content: center;
     height: 100%;
     margin-top: .7em;
     gap: .5em;
-  font-size: 6px;
- 
-   
+    font-size: 6px;
   }
+
   .tech-item {
     display: flex;
     flex-direction: column;
@@ -340,7 +307,7 @@ background: var(--gradient-accent);
     height: auto;
     margin-top: 1em;
   }
-  
+
   .project-carousel {
     border: 1px solid #0f0a0a;
     padding: 5px;
@@ -348,32 +315,22 @@ background: var(--gradient-accent);
     border-radius: 2em;
     box-shadow: rgba(243, 241, 241, 0.3) 4px 7px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
     width: 75%;
-  margin-top: 5em ;
+    margin-top: 5em;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     height: auto;
-  
-  }
-  .thumb-title{
-    font-size: x-large;
   }
 
+  .thumb-title {
+    font-size: x-large;
+    color: black;
+  }
 }
 
 /* Media Query for Larger Screens */
 @media (min-width: 1200px) {
-  /* Adjust styles for larger screens here */
-  
   .portfolio-nav li {
     font-size: large;
   }
-  
-  /* Add more rules for other sections and elements as needed */
 }
-
-
-
-
-

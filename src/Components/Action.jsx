@@ -8,9 +8,11 @@ const Action = () => {
     <motion.div
       initial={{ x: -1000 }}
       animate={{ x: 0 }}
-      transition={{ duration: 1.5, delay: 0.5 }}
+      transition={{ duration: 2.5, delay: 1.5 }}
+      zindex= {1}
       className="cta-container"
     >
+      <div className="mask"></div> {/* Add the mask div */}
       <div className="cta-icons">
         <a href="https://github.com/esrtewatl" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} />

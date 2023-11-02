@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet";
 import fitapp from '../assets/fitapp.png';
 import mfz from "../assets/mfz.png"
 import pixel from '../assets/Pixel.png';
-import UC from "./UC.JSX";
+
 const Portfolio = () => {
   const sectionsRef = {
     about: useRef(null),
@@ -70,7 +70,7 @@ const Portfolio = () => {
       <Helmet>
         <meta name="description" content="Passionate Front-End Developer with expertise in crafting engaging and responsive web experiences. Proficient in HTML, CSS, JavaScript, and React.js. Skilled in UI/UX design principles, web accessibility, and performance optimization. Explore my portfolio to see projects showcasing creativity, interactivity, and clean code." />
       </Helmet>
-      <UC />
+    
       <motion.nav
         className="portfolio-nav"
         variants={navVariants}
@@ -78,16 +78,17 @@ const Portfolio = () => {
         animate="visible"
       >
         <ul>
+          <div className="sect-links">
           <li className={activeSection === "about" ? "active" : ""}>
             <a href="#about">About</a>
           </li>
-          <li className={activeSection === "skills" ? "active" : ""}>
-            <a href="#skills ">Skills</a>
-          </li>
+          </div>
+          <div className="sect-links">
           <li className={activeSection === "projects" ? "active" : ""}>
             <a href="#projects">Projects</a>
           </li>
-          
+          </div>
+          <div className="sect-links">
           <li>
           <a
         href="https://www.dropbox.com/scl/fi/zyf274bq1jh8ol7znwyxa/Portfolio-Stewart-Front-End-React-Developer.pdf?rlkey=q97cveze99wdgniaknd3ik5p3&dl=0"
@@ -97,7 +98,7 @@ const Portfolio = () => {
         Download Resume
       </a>
         </li>
-
+</div>
 
         </ul>
       </motion.nav>
@@ -108,7 +109,7 @@ const Portfolio = () => {
       <motion.section id="skills" className="portfolio-section">
      
        
-        <motion.h3 className='ss'variants={itemVariants}>Specialized Skills</motion.h3>
+        <motion.h2 className='ss'variants={itemVariants}>Specialized Skills</motion.h2>
         <ul className="skills-list">
           
   <li>UI/UX Design Principles</li>
@@ -126,8 +127,10 @@ const Portfolio = () => {
         </ul>
       </motion.section>
       <section id="projects" className="portfolio-section">
+      
+        <div className="project-card">  
         <h2>My Projects</h2>
-        <div className="project-card">
+
           <div className="project">
             <div className="memory-game-container">
               {showCover ? (

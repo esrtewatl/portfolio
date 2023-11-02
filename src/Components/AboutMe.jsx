@@ -67,15 +67,18 @@ const AboutMe = () => {
       animate="visible"
     >
         <Action/>
-       
-        <h2 className="title">Front End Developer</h2>
-        <Sprite className='sprite'  />
+
+        <div className="side2side">
+          <div className="devstack">
         <div className="tag">
    
-      <motion.h1 className="name" variants={nameVariants} initial="hidden" animate="visible">
-        Erica Stewart
-      </motion.h1>
-      </div>
+   <motion.h1 className="name" variants={nameVariants} initial="hidden" animate="visible">
+     Erica Stewart
+   </motion.h1>
+   </div>
+        <h2 className="title">Front End Developer</h2>
+        <Sprite className='sprite'  />
+       </div>
 
       <div className="summary" ref={summaryRef}>
         {isSummaryInView && (
@@ -83,6 +86,7 @@ const AboutMe = () => {
             My passion for web design set me on a five-year journey as a dedicated Frontend React Developer. I specialize in creating engaging web interfaces with a focus on animation and refined UX/UI design to provide exceptional user experiences. Proficient in JavaScript, CSS3, and HTML5, I prioritize compatibility across browsers and adhere to accessibility and design standards. My toolkit includes industry-standard tools such as Figma, Framer, Bootstrap, and Chakra UI, enabling me to craft clean, maintainable code and contribute comprehensively to the development process.
           </motion.p>
         )}
+      </div>
       </div>
     </motion.section>
   );
