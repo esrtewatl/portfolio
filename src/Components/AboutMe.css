@@ -175,21 +175,17 @@
     margin-bottom: 1.5vw;
   }
   .summary {
+    width: 90%;
     padding: 2vw;
     border-radius: 3vw;
   }
   .summary p {
-    font-size: 3vw;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-  }
-  .summaryP {
     font-size: 3.5vw;
-    line-height: 1.4;
-    margin: 0 auto 1.5vw;
-    padding: 1vw;
-    margin-bottom: 1vw;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+   text-align:left;
   }
+  
   .about-me-section h3 {
     font-size: 4.5vw;
     margin-top: 1.5vw;
