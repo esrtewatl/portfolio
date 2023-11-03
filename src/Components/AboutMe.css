@@ -3,9 +3,9 @@
   display: flex;
   margin-top: 2em;
   width: 80%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 4em;
 }
 .devstack{
   display: flex;

@@ -6,6 +6,7 @@
 .cta-container {
   position: relative;
   width: 100%;
+  margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
