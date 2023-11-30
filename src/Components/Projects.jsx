@@ -73,7 +73,7 @@ const Projects = () => {
             </div>
             <div className="thumbnail-div">
               <p className="thumb-title">Modern Formz Blog</p>
-              <p>
+              <p className='desc'>
                 Modern Formz: Where art converges with activism, featuring dynamic visuals and critical conversations.
                 Powered by React with React Router for seamless navigation and animated with Framer Motion for engaging
                 user experience. A fusion of creativity and societal dialogue.
@@ -94,7 +94,7 @@ const Projects = () => {
             </div>
             <div className="thumbanail-div">
               <p className="thumb-title">Flex Flow</p>
-              <p>
+              <p className='desc'>
                 This fitness app uses ReactJS and Redux for a dynamic front-end with Material-UI components for design.
                 Responsive CSS media queries adapt the app to various screens. It includes component structuring, state
                 management, data handling, and interactive charts for workout progress. Dark/light mode themes offer
@@ -116,8 +116,8 @@ const Projects = () => {
             <div className="thumbanail-div">
               <p className="thumb-title">Pixel Creator</p>
               <p>(Not for phones/tablet)</p>
-              <br />
-              <p>
+        
+              <p className='desc'>
                 Pixel Pal Creator is a React.js app for creating pixel art with ease. It provides a responsive canvas with
                 customizable grids, real-time painting, and undo capabilities. You can save your artwork as JPEG and even
                 import/export pixel art using JSON files. With a user-friendly interface and responsive design,

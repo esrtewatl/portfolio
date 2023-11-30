@@ -150,8 +150,8 @@
   border-radius: 2em;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 12px 9px 8px, rgba(0, 0, 0, 0.22) 3px 5px 2px;
-  width: 75%;
-  color: var(--text-color);
+
+  
 }
 
 .project {
@@ -218,23 +218,29 @@
   margin-top: .7em;
   gap: 2.5em;
   line-height: 2.7em;
+  color: aqua;
 }
-
+.desc{
+  color: #0f0a0a !important;
+  font-weight: bold;
+  font-size: large;
+}
 .thumb-title {
   color: black;
-  font-size: larger;
+  font-size: xx-large;
   font-weight: 900;
-  text-shadow: #f0f0f0 1px 1px;
+  text-shadow: #232222 1px 1px;
   margin-top: .5em;
   margin-bottom: 1.5em;
 }
 
 .thumbanil-div a {
-  color: white;
+  color: rgb(230, 18, 18);
   font-family: 'Rock Salt', cursive;
   text-decoration: none;
   font-weight: bold;
 }
+
 
 /* Contact Section */
 #contact {
