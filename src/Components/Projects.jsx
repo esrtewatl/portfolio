@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import MemoryGame from './MemoryGame'; // Import your MemoryGame component
 import mfz from '../assets/mfz.png'; // Replace with the actual path to your Modern Forms Thumbnail image
 import fitapp from '../assets/fitapp.png'; // Replace with the actual path to your Flex Flow App Thumbnail image
-import pixel from '../assets/pixel.png'; // Replace with the actual path to your Pixel Creator Thumbnail image
+import pixel from '../assets/Pixel.png'; // Replace with the actual path to your Pixel Creator Thumbnail image
 
 const Projects = () => {
   const [showCover, setShowCover] = useState(true);
